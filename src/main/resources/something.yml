@@ -1,0 +1,5 @@
+somethings:
+  - name: foo
+    enabled: true
+  - name: bar
+    enabled: false
