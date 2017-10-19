@@ -1,19 +1,15 @@
 package tv.configuration;
 
-import java.util.List;
-
 import lombok.Data;
-
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.List;
+
 @Configuration
-@ConfigurationProperties(locations = { "file:/etc/test/something.yml",
-		"classpath:something.yml" }, merge = true)
-@EnableConfigurationProperties
+@ConfigurationProperties
 @Data
 public class SomeConfigurationProperties {
 
-	private List<Something> somethings;
+    private List<Something> somethings;
 }
